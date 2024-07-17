@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Simon Mckindley">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts/destination-script.js" defer></script>
+
+    <title>Space tourism</title>
+</head>
+
+<body>
+
+    <picture>
+        <source media="(max-width: 430px)" srcset="assets/destination/background-destination-mobile.jpg">
+        <source media="(max-width: 770px)" srcset="assets/destination/background-destination-tablet.jpg">
+        <img class="bg-image" src="assets/destination/background-destination-desktop.jpg" alt="Space scene" />
+    </picture>
+
+    <header>
+        <a href="/">
+            <img width="48" src="assets/shared/logo.svg" alt="Star Logo">
+        </a>
+
+        <nav>
+            <ul class="nav-list heading nav-text">
+                <li>
+                    <a href="/" class="heading nav-text">Home</a>
+                </li>
+                <li aria-current="true">
+                    Destination
+                </li>
+                <li>
+                    <a href="/" class="heading nav-text">Crew</a>
+                </li>
+                <li>
+                    <a href="/" class="heading nav-text">Technology</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="wrapper">
+        <div class="content destination-outer">
+            <div class="page-heading heading heading-xs">Pick your destination</div>
+            <div class="content-inner">
+                <img class="destination-image" width="445" src="./assets/destination/image-moon.png" alt="Moon image">
+
+                <div class="destination-content">
+                    <div class="destination-selectors">
+                        <button type="button" class="destination-btn heading nav-text mid-text" aria-current="true">Moon</button>
+                        <button type="button" class="destination-btn heading nav-text mid-text">Mars</button>
+                        <button type="button" class="destination-btn heading nav-text mid-text">Europa</button>
+                        <button type="button" class="destination-btn heading nav-text mid-text">Titan</button>
+                    </div>
+
+                    <h1 class="destination-heading heading heading-l">Moon</h1>
+
+                    <p class="destination-text">
+                        See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain
+                        perspective and come back refreshed. While you’re there, take in some history by visiting the
+                        Luna 2 and Apollo 11 landing sites.
+                    </p>
+
+                    <div class="destination-data">
+                        <div class="destination-distance">
+                            <div class="data-heading heading subhead-s">Avg. Distance</div>
+                            <div class="distance-data heading subhead-l">384,400 km</div>
+                        </div>
+                        <div class="destination-travel">
+                            <div class="data-heading heading subhead-s">Est. Travel Time</div>
+                            <div class="distance-data heading subhead-l">3 days</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
