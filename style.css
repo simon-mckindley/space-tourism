@@ -310,3 +310,28 @@ nav {
 .data-heading {
     margin-bottom: 1rem;
 }
+
+/**** Animation ****/
+.fade-in {
+    animation: fade-in 200ms linear forwards;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.fade-out {
+    animation: fade-out 200ms linear forwards;
+}
+
+@keyframes fade-out {
+    100% {
+        opacity: 0;
+    }
+}
