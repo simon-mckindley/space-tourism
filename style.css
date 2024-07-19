@@ -122,7 +122,7 @@ body {
     overflow: hidden;
 }
 
-picture {
+.bg-picture {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -355,6 +355,55 @@ nav {
 
 .crew-btn:not([aria-current='true']):hover {
     opacity: 0.5;
+}
+
+/**** Technology ****/
+.tech-outer .page-heading::before {
+    content: '03';
+}
+
+.tech-content-inner {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 2rem;
+    align-items: center;
+}
+
+.tech-selectors {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.tech-btn {
+    color: var(--white);
+    width: 80px;
+    aspect-ratio: 1/1;
+    border-radius: 1000px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    transition: all 300ms;
+}
+
+.tech-btn[aria-current='true'] {
+    color: var(--very-dark-navy);
+    border: none;
+    background-color: var(--white);
+}
+
+.tech-btn:not([aria-current='true']):hover {
+    border-color: var(--white);
+}
+
+.tech-name {
+    margin-block: 1rem 3rem;
+}
+
+.tech-text {
+    min-height: 9rem;
+}
+
+.tech-image img {
+    height: 65vh;
 }
 
 /**** Animations ****/
