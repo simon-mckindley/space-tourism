@@ -57,6 +57,7 @@ h1 {
 
 .heading-m {
     --_size: 56px;
+    color: var(--white);
 }
 
 .heading-s {
@@ -241,6 +242,12 @@ nav {
     opacity: 1;
 }
 
+.outer {
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+}
+
 .page-heading::before {
     content: '';
     font-weight: bold;
@@ -249,12 +256,6 @@ nav {
 }
 
 /**** Destination ****/
-.destination-outer {
-    flex-direction: column;
-    align-items: start;
-    justify-content: space-between;
-}
-
 .destination-outer .page-heading::before {
     content: '01';
 }
@@ -311,7 +312,48 @@ nav {
     margin-bottom: 1rem;
 }
 
-/**** Animation ****/
+/**** Crew ****/
+.crew-outer .page-heading::before {
+    content: '02';
+}
+
+.crew-content {
+    align-self: end;
+}
+
+.crew-name {
+    margin-block: 1rem 3rem;
+}
+
+.crew-image {
+    justify-self: center;
+    min-height: 700px;
+}
+
+.crew-selectors {
+    display: flex;
+    gap: 2rem;
+    margin-block: 10rem 2rem;
+}
+
+.crew-btn {
+    width: 15px;
+    aspect-ratio: 1/1;
+    border-radius: 1000px;
+    background-color: var(--white);
+    opacity: 0.17;
+    transition: opacity 300ms;
+}
+
+.crew-btn[aria-current='true'] {
+    opacity: 1;
+}
+
+.crew-btn:not([aria-current='true']):hover {
+    opacity: 0.5;
+}
+
+/**** Animations ****/
 .fade-in {
     animation: fade-in 200ms linear forwards;
 }

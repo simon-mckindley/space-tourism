@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Simon Mckindley">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts/crew-script.js" defer></script>
+
+    <title>Crew</title>
+</head>
+
+<body>
+
+    <picture>
+        <source media="(max-width: 430px)" srcset="assets/crew/background-crew-mobile.jpg">
+        <source media="(max-width: 770px)" srcset="assets/crew/background-crew-tablet.jpg">
+        <img class="bg-image" src="assets/crew/background-crew-desktop.jpg" alt="Space scene" />
+    </picture>
+
+    <header>
+        <a href="/">
+            <img width="48" src="assets/shared/logo.svg" alt="Star Logo">
+        </a>
+
+        <nav>
+            <ul class="nav-list heading nav-text">
+                <li>
+                    <a href="/" class="heading nav-text">Home</a>
+                </li>
+                <li>
+                    <a href="destination.html" class="heading nav-text">Destination</a>
+                </li>
+                <li aria-current="true">
+                    Crew
+                </li>
+                <li>
+                    <a href="/" class="heading nav-text">Technology</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="wrapper">
+        <div class="content outer crew-outer">
+            <div class="page-heading heading heading-xs">Meet your crew</div>
+            <div class="content-inner">
+
+                <div class="crew-content">
+                    <div class="crew-role heading heading-s mid-text"></div>
+
+                    <h1 class="crew-name heading heading-m"></h1>
+
+                    <p class="crew-bio"></p>
+
+                    <div class="crew-selectors">
+                        <button type="button" id="0" class="crew-btn" aria-current="true"></button>
+                        <button type="button" id="1" class="crew-btn"></button>
+                        <button type="button" id="2" class="crew-btn"></button>
+                        <button type="button" id="3" class="crew-btn"></button>
+                    </div>
+                </div>
+
+                <img class="crew-image" width="" height="" src="" alt="">
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

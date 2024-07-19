@@ -27,6 +27,7 @@ function assignData(destination) {
             el.classList.add("fade-in");
         });
         image.src = destination.images.png;
+        image.alt = `${destination.name} image`;
         heading.textContent = destination.name;
         text.textContent = destination.description;
         distance.textContent = destination.distance;
