@@ -20,15 +20,17 @@ function assignData(crew) {
     inputElements.forEach((el) => el.classList.add("fade-out"));
 
     setTimeout(() => {
-        inputElements.forEach((el) => {
-            el.classList.remove("fade-out");
-            el.classList.add("fade-in");
-        });
         image.src = crew.images.png;
         image.alt = `${crew.name} image`;
-        role.textContent = crew.role;
-        crewName.textContent = crew.name;
-        bio.textContent = crew.bio;
+        setTimeout(() => {
+            inputElements.forEach((el) => {
+                el.classList.remove("fade-out");
+                el.classList.add("fade-in");
+            });
+            role.textContent = crew.role;
+            crewName.textContent = crew.name;
+            bio.textContent = crew.bio;
+        }, 100);
     }, 250);
 }
 
