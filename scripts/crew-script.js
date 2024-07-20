@@ -18,7 +18,8 @@ function assignData(crew) {
     inputElements.forEach((el) => el.classList.add("fade-out"));
 
     setTimeout(() => {
-        image.src = crew.images.png;
+        image.src = "";
+        image.src = crew.images.webp;
         image.alt = `${crew.name} image`;
         setTimeout(() => {
             inputElements.forEach((el) => {

@@ -18,6 +18,8 @@ function assignData(tech) {
     inputElements.forEach((el) => el.classList.add("fade-out"));
 
     setTimeout(() => {
+        imageLarge.src = "";
+        imageSmall.srcset = "";
         imageSmall.srcset = tech.images.landscape;
         imageLarge.src = tech.images.portrait;
         imageLarge.alt = `${tech.name} image`;
