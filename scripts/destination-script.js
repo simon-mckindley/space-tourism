@@ -5,14 +5,12 @@ const distance = document.querySelector(".distance-data");
 const travel = document.querySelector(".travel-data");
 const inputElements = [image, heading, text, distance, travel];
 
-const selectors = document.querySelectorAll(".destination-btn");
-
 
 const data = JSON.parse(sessionStorage.getItem("space-data"));
 if (data) {
     console.log("Got data");
-    const moon = findDestination("Moon");
-    assignData(moon);
+    createSelectors(data.destinations);
+    assignData(findDestination(0));
 } else {
     console.log("NOT LOADED");
 }
@@ -36,24 +34,44 @@ function assignData(destination) {
 }
 
 
-function findDestination(name) {
-    return data.destinations.find((el) => el.name.toLowerCase() === name.toLowerCase());
+function createSelectors(destination) {
+    const selectorsWrapper = document.querySelector(".destination-selectors");
+
+    destination.forEach((item, index) => {
+        const button = document.createElement("button");
+        button.type = "button";
+        button.id = index;
+        button.className = "destination-btn heading nav-text mid-text";
+        button.textContent = item.name;
+        if (index === 0) {
+            button.setAttribute("aria-current", true);
+        }
+
+        button.addEventListener("click", function () {
+            changeItem(this);
+        });
+
+        selectorsWrapper.appendChild(button);
+    });
+}
+
+
+function changeItem(button) {
+    document.querySelectorAll(".destination-btn").forEach((el) => el.setAttribute("aria-current", false));
+    button.setAttribute("aria-current", true);
+
+    const destination = findDestination(button.id);
+    assignData(destination);
+}
+
+
+function findDestination(index) {
+    return data.destinations[parseInt(index)];
 }
 
 
 inputElements.forEach((el) => {
     el.addEventListener("animationend", function () {
         this.classList.remove("fade-in");
-    });
-});
-
-
-selectors.forEach((tab) => {
-    tab.addEventListener("click", function () {
-        selectors.forEach((el) => el.setAttribute("aria-current", false));
-        this.setAttribute("aria-current", true);
-
-        const destination = findDestination(this.id);
-        assignData(destination);
     });
 });
