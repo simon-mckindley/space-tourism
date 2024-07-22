@@ -25,3 +25,4 @@ async function loadData() {
 document.addEventListener('DOMContentLoaded', () => {
     loadData();
 });
+

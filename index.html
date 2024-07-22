@@ -7,7 +7,8 @@
   <meta name="author" content="Simon Mckindley">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/moon-landing-apollo-11-nasa-buzz-aldrin-41162.jpeg">
   <link rel="stylesheet" href="style.css">
-  <script src="scripts/script.js" defer></script>
+  <script src="scripts/load-script.js" defer></script>
+  <script src="scripts/mobile-script.js" defer></script>
 
   <title>Space Tourism</title>
 </head>
@@ -20,7 +21,7 @@
     <img class="bg-image" src="assets/home/background-home-desktop.jpg" alt="Space scene" />
   </picture>
 
-  <div class="mobile-menu" role="navigation">
+  <div class="mobile-menu" role="navigation" aria-hidden="true">
     <button id="close-button" type="button">
       <img width="25" src="assets/shared/icon-close.svg" alt="Close">
     </button>
@@ -63,7 +64,6 @@
     <button id="mobile-button" type="button">
       <img src="assets/shared/icon-hamburger.svg" alt="Menu">
     </button>
-    </div>
   </header>
 
   <div class="wrapper">

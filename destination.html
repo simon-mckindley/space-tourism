@@ -8,6 +8,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/moon-landing-apollo-11-nasa-buzz-aldrin-41162.jpeg">
     <link rel="stylesheet" href="style.css">
     <script src="scripts/destination-script.js" defer></script>
+    <script src="scripts/mobile-script.js" defer></script>
 
     <title>Destinations</title>
 </head>
@@ -19,6 +20,26 @@
         <source media="(max-width: 1023px)" srcset="assets/destination/background-destination-tablet.jpg">
         <img class="bg-image" src="assets/destination/background-destination-desktop.jpg" alt="Space scene" />
     </picture>
+
+    <div class="mobile-menu" role="navigation" aria-hidden="true">
+        <button id="close-button" type="button">
+            <img width="25" src="assets/shared/icon-close.svg" alt="Close">
+        </button>
+        <ul class="nav-list heading nav-text">
+            <li>
+                <a href="/" class="link heading nav-text">Home</a>
+            </li>
+            <li aria-current="true">
+                <div class="link heading nav-text">Destination</div>
+            </li>
+            <li>
+                <a href="crew.html" class="link heading nav-text">Crew</a>
+            </li>
+            <li>
+                <a href="technology.html" class="link heading nav-text">Technology</a>
+            </li>
+        </ul>
+    </div>
 
     <header>
         <a href="/">
@@ -41,6 +62,10 @@
                 </li>
             </ul>
         </nav>
+
+        <button id="mobile-button" type="button">
+            <img src="assets/shared/icon-hamburger.svg" alt="Menu">
+        </button>
     </header>
 
     <div class="wrapper">

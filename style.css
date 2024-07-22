@@ -535,12 +535,16 @@ nav {
 
 @media screen and (max-width: 600px) {
     body {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     header {
         top: 1rem;
         margin-inline: 1.5rem;
+    }
+
+    .header-logo {
+        margin-right: 0;
     }
 
     #mobile-button {
@@ -556,6 +560,11 @@ nav {
         background-color: rgba(255, 255, 255, 0.05);
         backdrop-filter: blur(40px);
         z-index: 100;
+        transition: translate 500ms;
+    }
+
+    .mobile-menu[aria-hidden='true'] {
+        translate: 102%;
     }
 
     #close-button {
