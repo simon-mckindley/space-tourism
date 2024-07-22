@@ -1,5 +1,4 @@
 
-
 async function fetchJsonData() {
     try {
         const response = await fetch('data.json');

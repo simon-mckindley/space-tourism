@@ -14,6 +14,7 @@ if (data) {
     console.log("NOT LOADED");
 }
 
+
 function assignData(crew) {
     inputElements.forEach((el) => el.classList.add("fade-out"));
 

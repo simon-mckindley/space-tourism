@@ -14,6 +14,7 @@ if (data) {
     console.log("NOT LOADED");
 }
 
+
 function assignData(tech) {
     inputElements.forEach((el) => el.classList.add("fade-out"));
 
