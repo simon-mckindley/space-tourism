@@ -39,62 +39,60 @@ h1 {
 
 .heading {
     --_family: "Bellefair", serif;
-    --_size: 18px;
     --_spacing: 0px;
     --_height: normal;
     font-family: var(--_family);
-    /* font-size: var(--_size); */
     letter-spacing: var(--_spacing);
     line-height: var(--_height);
     text-transform: uppercase;
 }
 
 .heading-xl {
-    /* --_size: 144px; */
+    /* size: 144px; */
     font-size: 8em;
     color: var(--white);
 }
 
 .heading-l {
-    /* --_size: 100px; */
+    /* size: 100px; */
     font-size: 5.5em;
     color: var(--white);
 }
 
 .heading-m {
-    /* --_size: 56px; */
+    /* size: 56px; */
     font-size: 3.1em;
     color: var(--white);
 }
 
 .heading-s {
-    /* --_size: 32px; */
+    /* size: 32px; */
     font-size: 1.75em;
 }
 
 .heading-xs {
+    /* size: 28px; */
     --_family: "Barlow Condensed", sans-serif;
-    /* --_size: 28px; */
     --_spacing: 4px;
     font-size: 1.5em;
 }
 
 .subhead-l {
-    /* --_size: 28px; */
+    /* size: 28px; */
     font-size: 1.5em;
     color: var(--white);
 }
 
 .subhead-s {
+    /* size: 14px; */
     --_family: "Barlow Condensed", sans-serif;
-    /* --_size: 14px; */
     --_spacing: 2px;
     font-size: 0.8em;
 }
 
 .nav-text {
+    /* size: 16px; */
     --_family: "Barlow Condensed", sans-serif;
-    /* --_size: 16px; */
     --_spacing: 2px;
     font-size: 0.9em;
     color: var(--white);
@@ -150,6 +148,7 @@ body {
     width: 100%;
     height: 100%;
 }
+
 
 /**** Header ****/
 header {
@@ -211,6 +210,7 @@ nav {
     content: '0'counter(list-item) ' ';
     font-weight: bold;
 }
+
 
 /**** Content ****/
 .wrapper {
@@ -285,6 +285,7 @@ nav {
     margin-right: 1.5ch;
 }
 
+
 /**** Destination ****/
 .destination-outer .page-heading::before {
     content: '01';
@@ -342,6 +343,7 @@ nav {
     margin-bottom: 1rem;
 }
 
+
 /**** Crew ****/
 .crew-outer .page-heading::before {
     content: '02';
@@ -386,6 +388,7 @@ nav {
 .crew-btn:not([aria-current='true']):hover {
     opacity: 0.5;
 }
+
 
 /**** Technology ****/
 .tech-outer .page-heading::before {
@@ -437,6 +440,7 @@ nav {
     height: 65vh;
 }
 
+
 /**** Animations ****/
 .fade-in {
     animation: fade-in 200ms linear forwards;
@@ -463,6 +467,7 @@ nav {
 }
 
 
+/**** Tablet size ****/
 @media screen and (max-width: 1023px) {
     header {
         top: 0;
@@ -537,6 +542,7 @@ nav {
 }
 
 
+/**** Mobile size ****/
 @media screen and (max-width: 600px) {
     body {
         font-size: 14px;
