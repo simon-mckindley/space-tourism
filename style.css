@@ -9,6 +9,10 @@
     --white: rgb(255, 255, 255);
 }
 
+html {
+    overflow-x: hidden;
+}
+
 *+* {
     box-sizing: border-box;
 }
@@ -186,16 +190,16 @@ nav {
     cursor: pointer;
     border-bottom-width: 3px;
     border-bottom-style: solid;
-    border-bottom-color: transparent;
+    border-color: transparent;
     transition: border-color 800ms;
 }
 
 .nav-list li[aria-current='true'] {
-    border-bottom-color: white;
+    border-color: white;
 }
 
 .nav-list li:not([aria-current='true']):hover {
-    border-bottom-color: rgba(255, 255, 255, 0.5);
+    border-color: rgba(255, 255, 255, 0.5);
 }
 
 .nav-list .link {
@@ -582,16 +586,6 @@ nav {
         border-bottom: none;
         border-right-width: 6px;
         border-right-style: solid;
-        border-right-color: transparent;
-        transition: border-color 800ms;
-    }
-
-    .nav-list li[aria-current='true'] {
-        border-right-color: white;
-    }
-
-    .nav-list li:not([aria-current='true']):hover {
-        border-right-color: rgba(255, 255, 255, 0.5);
     }
 
     .nav-list .link {
